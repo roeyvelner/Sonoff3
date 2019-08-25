@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AppLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightOrangeBtn"
+    tools:context=".MainActivity">
+
+
+
+        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/thermometer_itay" />
+
+        <TextView
+            android:id="@+id/temp_End"
+            android:layout_width="1dp"
+            android:layout_alignBottom="@+id/temp"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/temp_textview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/temp_End"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/TextView_End"
+            android:layout_width="0dp"
+            android:layout_alignBottom="@+id/temp_textview"
+            android:layout_height="0dp"
+            />
+
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/Switch"
+            android:layout_width="202dp"
+            android:layout_height="71dp"
+            android:layout_above="@+id/BottomView"
+            android:layout_centerHorizontal="true"
+            app:sb_checked_color="@color/BlueBtn" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@id/BottomView"
+            android:visibility="invisible"
+            />
+
+
+
+
+</RelativeLayout>
